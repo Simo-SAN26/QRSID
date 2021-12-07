@@ -1,15 +1,16 @@
 import pyqrcode
 from pyzbar.pyzbar import decode
 from PIL import Image
-# import csv
 
-name = "Mario"
-surname = "Rossi"
-date_of_birth = "01/01/2000"
-sex = "maschio"
-city = "Milano"
-place_of_birth = "Carate Brianza (MB)"
+name = input("Name: ")
+surname = input("Surname: ")
+date_of_birth = input("Date Of Birth (dd/mm/yyyy): ")
+sex = input("Sex (Male, Famele, Non Binary): ")
+city = input("City: ")
+place_of_birth = input("Place Of Birty: ")
 
-qr = pyqrcode.create("Nome: {} | Cognome: {} | data di nascita: {} | sesso: {} | città: {} | luogo di nascita: {}".format(name,surname,date_of_birth,sex,city,place_of_birth) )
+qr = pyqrcode.create("Name: {} | Surname: {} | Date Of Birth: {} | Sex: {} | City: {} | Place Of Birth: {}".format(name,surname,date_of_birth,sex,city,place_of_birth) )
 
-qr.png("qrcode.png", scale=8)
+print("\nThe QRSID code was created successfully!\n")
+
+qr.png("MY-QRSID.png", scale=8)
