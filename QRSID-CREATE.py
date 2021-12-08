@@ -42,3 +42,5 @@ qr = pyqrcode.create("Name: {} | Surname: {} | Date Of Birth: {} | Sex: {} | Cit
 print("\nYour QRSID was created successfully!\n")
 
 qr.png("MY-QRSID.png", scale=8)
+
+input()
