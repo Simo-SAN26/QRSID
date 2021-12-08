@@ -50,3 +50,5 @@ print ("----")
 print (qr_decode[0].data.decode ("ascii"))
 
 print("\n")
+
+input()
